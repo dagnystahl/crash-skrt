@@ -6,7 +6,10 @@ app = Flask(__name__)
 
 
 @app.route("/", methods=['POST'])
-
 def home_view():
+        #JSON that is sent
         data = request.json
-        return jsonify(data)
+        if (data["ICY"] == True):
+                return jsonify(test[0])
+        else:
+                return jsonify(test[1])
