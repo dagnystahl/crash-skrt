@@ -6,4 +6,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def home_view():
-        return jsonify("Hello world")
+
+        return jsonify("U fInNa CrAsH")
