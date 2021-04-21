@@ -16,7 +16,6 @@ from sklearn.neighbors import KNeighborsClassifier
 '''********************************'''
 '''  Data Cleaning/Model Training  '''
 '''********************************'''
-test = ['U fInNa CrAsH', 'U good']
 app = Flask(__name__)
 
 
