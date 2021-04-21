@@ -55,4 +55,4 @@ def new_request():
         features = request.json
         predictions_float = predict_casualties(features)
         predictions_bool = [False if p == 0 else True for p in predictions_float]
-        return predictions_bool
+        return jsonify(predictions_bool)
