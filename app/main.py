@@ -12,12 +12,10 @@ import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 
-
 '''********************************'''
 '''  Data Cleaning/Model Training  '''
 '''********************************'''
 app = Flask(__name__)
-
 
 df_targets = pd.read_csv('labels.csv')
 df_targets = df_targets.drop(columns=["Unnamed: 0"])
