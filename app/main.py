@@ -20,10 +20,10 @@ test = ['U fInNa CrAsH', 'U good']
 app = Flask(__name__)
 
 
-df_targets = pd.read_csv('/content/drive/My Drive/CRASHSKRRT_ML_Project/Dagny/labels.csv')
+df_targets = pd.read_csv('labels.csv')
 df_targets = df_targets.drop(columns=["Unnamed: 0"])
 
-df_features = pd.read_csv('/content/drive/My Drive/CRASHSKRRT_ML_Project/Dagny/features.csv')
+df_features = pd.read_csv('features.csv')
 df_features = df_features.drop(columns=["Unnamed: 0"])
 
 X_train, X_test, y_train, y_test = train_test_split(df_features, df_targets, test_size=0.2, random_state=0)
